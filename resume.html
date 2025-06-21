@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pre-filled Resume Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    form {
+      background-color: #fff;
+      padding: 25px;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    input[type="checkbox"] {
+      width: auto;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="#" method="POST" enctype="multipart/form-data">
+    <h2>Resume Form</h2>
+
+    <div class="form-group">
+      <label>Field Name</label>
+      <input type="text" name="field_name" value=" " required>
+    </div>
+
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" name="full_name" value="" required>
+    </div>
+
+    <div class="form-group">
+      <label>Email Address</label>
+      <input type="email" name="email" value="" required>
+    </div>
+
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input type="tel" name="phone" value="" required>
+    </div>
+
+    <div class="form-group">
+      <label>Date of Birth</label>
+      <input type="date" name="dob" value="" required>
+    </div>
+
+    <div class="form-group">
+      <label>Gender</label>
+      <select name="gender" required>
+        <option selected></option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Marital Status</label>
+      <select name="marital_status" required>
+        <option selected></option>
+        <option>Married</option>
+        <option>Divorced</option>
+        <option>Widowed</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Nationality</label>
+      <input type="text" name="nationality" value="" required>
+    </div>
+
+    <div class="form-group">
+      <label>Address</label>
+      <textarea name="address" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>LinkedIn Profile URL</label>
+      <input type="url" name="linkedin" value="">
+    </div>
+
+    <div class="form-group">
+      <label>Career Objective</label>
+      <textarea name="career_objective" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Highest Qualification</label>
+      <input type="text" name="qualification" value="" required>
+    </div>
+
+    <div class="form-group">
+      <label>Name of College / University</label>
+      <input type="text" name="college_name" value="" required>
+    </div>
+
+    <div class="form-group">
+      <label>Year of Graduation</label>
+      <input type="number" name="graduation_year" value="" required>
+    </div>
+
+    <div class="form-group">
+      <label>Technical Skills</label>
+      <textarea name="technical_skills"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Programming Languages Known</label>
+      <textarea name="programming_languages"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Certifications</label>
+      <textarea name="certifications"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Work Experience (Years)</label>
+      <input type="text" name="work_experience" value="">
+    </div>
+
+    <div class="form-group">
+      <label>Last Company Worked At</label>
+      <input type="text" name="last_company" value="">
+    </div>
+
+    <div class="form-group">
+      <label>Your Job Role / Designation</label>
+      <input type="text" name="designation" value="">
+    </div>
+
+    <div class="form-group">
+      <label>Languages Known</label>
+      <textarea name="languages_known"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Hobbies</label>
+      <textarea name="hobbies"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Upload Profile Photo</label>
+      <input type="file" name="profile_photo" accept="image/*">
+    </div>
+
+    <div class="form-group">
+      <label>Upload Resume (PDF only)</label>
+      <input type="file" name="resume" accept=".pdf">
+    </div>
+
+    <div class="form-group">
+      <label><input type="checkbox" name="declaration" required>I hereby declare that the above information is true and correct</label>
+    </div>
+
+    <button type="submit">Submit Resume</button>
+  </form>
+
+</body>
+</html>
